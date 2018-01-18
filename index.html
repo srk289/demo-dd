@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+    <style>
+        div {
+            margin-bottom: 10px
+        }
+        mc-autocomplete {
+            display: block;
+            position: relative;
+            width: auto;
+        }
+        mc-autocomplete ul {
+            position: absolute;
+            z-index: 1;
+            top: 2px;
+            background: white;
+            border: 1px solid #ccc;
+        }
+        mc-autocomplete ul, mc-autocomplete ul li {
+            margin-left: 0;
+            padding-left: 10px;
+            list-style-type: none
+        }
+    </style>
+</head>
+<body>
+    <h1>Test</h1>
+    <div>
+        <mc-autocomplete id="allUsers"></mc-autocomplete>
+    </div>
+    <div>
+        <mc-autocomplete id="womenUsers"></mc-autocomplete>
+    </div>
+
+    <script data-main="app" src="node_modules/requirejs/require.js"></script>
+</body>
+</html>
